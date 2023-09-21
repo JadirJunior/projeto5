@@ -38,7 +38,7 @@ namespace projeto4
             var con = new MySqlConnection(cs);
             con.Open();
             var sql = "SELECT * FROM aluno WHERE 1 = 1";
-            if (cboEstado.Text != "")
+            if (cboEstado.SelectedIndex != 0)
             {
                 sql += " AND estado = @estado";
             }
@@ -49,7 +49,7 @@ namespace projeto4
 
             var sqlAd = new MySqlDataAdapter();
             sqlAd.SelectCommand = new MySqlCommand(sql, con);
-            if (cboEstado.Text != "")
+            if (cboEstado.SelectedIndex != 0)
             {
                 sqlAd.SelectCommand.Parameters.AddWithValue("@estado", cboEstado.Text);
             }

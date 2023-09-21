@@ -100,6 +100,7 @@
             this.cboEstado.IntegralHeight = false;
             this.cboEstado.ItemHeight = 43;
             this.cboEstado.Items.AddRange(new object[] {
+            "Todos",
             "AC",
             "AL",
             "AP",

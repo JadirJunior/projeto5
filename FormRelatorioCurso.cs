@@ -129,7 +129,7 @@ namespace projeto4
 
         private void FormRelatorioCurso_FormClosed(object sender, FormClosedEventArgs e)
         {
-            Principal.isOpenCurso = false;
+            Principal.isOpenRelatorioCurso = false;
         }
     }
 }
