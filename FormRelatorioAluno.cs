@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Diagnostics;
 using System.Drawing;
+using System.Drawing.Printing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -19,7 +20,7 @@ namespace projeto4
 {
     public partial class FormRelatorioAluno : MaterialForm
     {
-        string cs = @"server=127.0.0.1;" + "port=3307;" + "uid=root;" + "pwd=;" + "database=academico";
+        string cs = @"server=127.0.0.1;" + "uid=root;" + "pwd=;" + "database=academico";
 
         public FormRelatorioAluno()
         {
@@ -78,9 +79,8 @@ namespace projeto4
             table.Style.BorderPen = new PdfPen(brush1, 0.75f);
             table.Style.HeaderStyle.StringFormat = new PdfStringFormat(PdfTextAlignment.Center);
             table.Style.HeaderSource = PdfHeaderSource.ColumnCaptions;
-            table.Style.HeaderSource = PdfHeaderSource.Rows;
-            table.Style.ShowHeader= true;
             table.Style.HeaderStyle.BackgroundBrush = PdfBrushes.CadetBlue;
+            table.Style.ShowHeader = true;
             table.DataSource = dt;
             foreach(PdfColumn col in table.Columns)
             {
@@ -89,7 +89,10 @@ namespace projeto4
             table.Draw(page, new Point(0, y+30));
 
             doc.SaveToFile("RelatorioAlunos.pdf");
+
         }
+
+
         private void CarregaImpressoras()
         {
             foreach (string printer in 
@@ -102,21 +105,22 @@ namespace projeto4
         private void btnImprimir_Click(object sender, EventArgs e)
         {
             MontaRelatorio();
-            var p = new Process();
-            p.StartInfo = new ProcessStartInfo(@"RelatorioAlunos.pdf")
-            {
-                UseShellExecute = true,
-                Verb = "print",
-                CreateNoWindow = true,
-                WindowStyle = ProcessWindowStyle.Hidden,
-                Arguments = "\"" + cboImpressora.Text + "\""
-            };
-            p.Start();
+
+            String impressora = cboImpressora.Text;
+
+            if (String.IsNullOrEmpty(impressora)) return;
+
+            PdfDocument doc = new PdfDocument();
+
+            doc.LoadFromFile(@"RelatorioAlunos.pdf");
+            doc.PrintSettings.PrinterName = impressora;
+            doc.Print();
         }
 
         private void btnVisualizar_Click(object sender, EventArgs e)
         {
             MontaRelatorio();
+
             var p = new Process();
             p.StartInfo = new ProcessStartInfo(@"RelatorioAlunos.pdf")
             {

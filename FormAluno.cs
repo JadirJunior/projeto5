@@ -16,7 +16,7 @@ namespace projeto4
     public partial class FormAluno : MaterialForm
     {
         bool isAlteracao = false;
-        string cs = @"server=127.0.0.1;" + "port=3307;" + "uid=root;" + "pwd=;" + "database=academico";//Estou iniciando o banco na string -> string de conexão
+        string cs = @"server=127.0.0.1;" + "uid=root;" + "pwd=;" + "database=academico";//Estou iniciando o banco na string -> string de conexão
 
         public FormAluno()
         {

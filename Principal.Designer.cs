@@ -37,6 +37,8 @@
             this.cadastroCursoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.relatóriosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.alunosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.cursoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.professorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -90,7 +92,9 @@
             // relatóriosToolStripMenuItem
             // 
             this.relatóriosToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.alunosToolStripMenuItem});
+            this.alunosToolStripMenuItem,
+            this.cursoToolStripMenuItem,
+            this.professorToolStripMenuItem});
             this.relatóriosToolStripMenuItem.Name = "relatóriosToolStripMenuItem";
             this.relatóriosToolStripMenuItem.Size = new System.Drawing.Size(71, 20);
             this.relatóriosToolStripMenuItem.Text = "Relatórios";
@@ -102,6 +106,20 @@
             this.alunosToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.alunosToolStripMenuItem.Text = "Alunos";
             this.alunosToolStripMenuItem.Click += new System.EventHandler(this.alunosToolStripMenuItem_Click);
+            // 
+            // cursoToolStripMenuItem
+            // 
+            this.cursoToolStripMenuItem.Name = "cursoToolStripMenuItem";
+            this.cursoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.cursoToolStripMenuItem.Text = "Curso";
+            this.cursoToolStripMenuItem.Click += new System.EventHandler(this.cursoToolStripMenuItem_Click);
+            // 
+            // professorToolStripMenuItem
+            // 
+            this.professorToolStripMenuItem.Name = "professorToolStripMenuItem";
+            this.professorToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.professorToolStripMenuItem.Text = "Professor";
+            this.professorToolStripMenuItem.Click += new System.EventHandler(this.professorToolStripMenuItem_Click);
             // 
             // Principal
             // 
@@ -134,5 +152,7 @@
         private ToolStripMenuItem cadastroCursoToolStripMenuItem;
         private ToolStripMenuItem relatóriosToolStripMenuItem;
         private ToolStripMenuItem alunosToolStripMenuItem;
+        private ToolStripMenuItem cursoToolStripMenuItem;
+        private ToolStripMenuItem professorToolStripMenuItem;
     }
 }
