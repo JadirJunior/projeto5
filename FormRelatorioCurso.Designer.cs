@@ -78,7 +78,7 @@
             this.cboTipo.Name = "cboTipo";
             this.cboTipo.Size = new System.Drawing.Size(282, 49);
             this.cboTipo.StartIndex = 0;
-            this.cboTipo.TabIndex = 5;
+            this.cboTipo.TabIndex = 0;
             // 
             // txtDt
             // 
@@ -114,7 +114,7 @@
             this.txtDt.ShortcutsEnabled = true;
             this.txtDt.Size = new System.Drawing.Size(135, 48);
             this.txtDt.SkipLiterals = true;
-            this.txtDt.TabIndex = 10;
+            this.txtDt.TabIndex = 1;
             this.txtDt.TabStop = false;
             this.txtDt.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.txtDt.TextMaskFormat = System.Windows.Forms.MaskFormat.IncludeLiterals;
@@ -162,7 +162,7 @@
             this.cboImpressora.Name = "cboImpressora";
             this.cboImpressora.Size = new System.Drawing.Size(376, 49);
             this.cboImpressora.StartIndex = 0;
-            this.cboImpressora.TabIndex = 7;
+            this.cboImpressora.TabIndex = 0;
             // 
             // materialButton1
             // 
@@ -178,7 +178,7 @@
             this.materialButton1.Name = "materialButton1";
             this.materialButton1.NoAccentTextColor = System.Drawing.Color.Empty;
             this.materialButton1.Size = new System.Drawing.Size(97, 36);
-            this.materialButton1.TabIndex = 3;
+            this.materialButton1.TabIndex = 0;
             this.materialButton1.Text = "&IMPRIMIR";
             this.materialButton1.Type = ReaLTaiizor.Controls.MaterialButton.MaterialButtonType.Contained;
             this.materialButton1.UseAccentColor = false;
@@ -199,7 +199,7 @@
             this.materialButton2.Name = "materialButton2";
             this.materialButton2.NoAccentTextColor = System.Drawing.Color.Empty;
             this.materialButton2.Size = new System.Drawing.Size(112, 36);
-            this.materialButton2.TabIndex = 4;
+            this.materialButton2.TabIndex = 1;
             this.materialButton2.Text = "&VISUALIZAR";
             this.materialButton2.Type = ReaLTaiizor.Controls.MaterialButton.MaterialButtonType.Contained;
             this.materialButton2.UseAccentColor = false;

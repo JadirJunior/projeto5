@@ -78,7 +78,7 @@
             this.txtCidade.SelectionStart = 0;
             this.txtCidade.ShortcutsEnabled = true;
             this.txtCidade.Size = new System.Drawing.Size(235, 48);
-            this.txtCidade.TabIndex = 6;
+            this.txtCidade.TabIndex = 0;
             this.txtCidade.TabStop = false;
             this.txtCidade.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.txtCidade.TrailingIcon = null;
@@ -133,7 +133,7 @@
             this.cboEstado.Name = "cboEstado";
             this.cboEstado.Size = new System.Drawing.Size(135, 49);
             this.cboEstado.StartIndex = 0;
-            this.cboEstado.TabIndex = 7;
+            this.cboEstado.TabIndex = 1;
             // 
             // gpb2
             // 
@@ -199,7 +199,7 @@
             this.cboImpressora.Name = "cboImpressora";
             this.cboImpressora.Size = new System.Drawing.Size(376, 49);
             this.cboImpressora.StartIndex = 0;
-            this.cboImpressora.TabIndex = 6;
+            this.cboImpressora.TabIndex = 0;
             // 
             // btnImprimir
             // 
@@ -215,7 +215,7 @@
             this.btnImprimir.Name = "btnImprimir";
             this.btnImprimir.NoAccentTextColor = System.Drawing.Color.Empty;
             this.btnImprimir.Size = new System.Drawing.Size(87, 36);
-            this.btnImprimir.TabIndex = 6;
+            this.btnImprimir.TabIndex = 1;
             this.btnImprimir.Text = "Imprimir";
             this.btnImprimir.Type = ReaLTaiizor.Controls.MaterialButton.MaterialButtonType.Contained;
             this.btnImprimir.UseAccentColor = false;
@@ -236,7 +236,7 @@
             this.btnVisualizar.Name = "btnVisualizar";
             this.btnVisualizar.NoAccentTextColor = System.Drawing.Color.Empty;
             this.btnVisualizar.Size = new System.Drawing.Size(103, 36);
-            this.btnVisualizar.TabIndex = 7;
+            this.btnVisualizar.TabIndex = 0;
             this.btnVisualizar.Text = "Visualizar";
             this.btnVisualizar.Type = ReaLTaiizor.Controls.MaterialButton.MaterialButtonType.Contained;
             this.btnVisualizar.UseAccentColor = false;
